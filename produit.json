@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "title": "iPhone 17 Pro",
+    "image": "images/iphone17pro.jpg",
+    "resume": "Design réinventé. \nPerfomances Pro.",
+    "categorie": "iphone",
+    "prix": 1329
+  },
+  {
+    "id": 2,
+    "title": "iPhone 17",
+    "image": "images/iphone17.jpg",
+    "resume": "Encore plus irresistible.",
+    "categorie": "iphone",
+    "prix": 969
+  },
+  {
+    "id": 3,
+    "title": "iPhone Air",
+    "image": "images/iphoneair.jpg",
+    "resume": "Le plus fin des iphones.",
+    "categorie": "iphone",
+    "prix": 1229
+  },
+  {
+    "id": 4,
+    "title": "iPhone 16",
+    "image": "images/iphone16.jpg",
+    "resume": "Performance exeptionnelles.",
+    "categorie": "iphone",
+    "prix": 899
+  },
+  {
+    "id": 5,
+    "title": "iPhone 16e",
+    "image": "images/iphone16e.jpg",
+    "resume": "Il a tout pour lui.",
+    "categorie": "iphone",
+    "prix": 799
+  },
+  {
+    "id": 101,
+    "title": "Watch Series 11",
+    "image": "images/watch.png",
+    "resume": "La montre ultime pour votre santé.",
+    "categorie": "watch",
+    "prix": 449
+  },
+  {
+    "id": 102,
+    "title": "Watch SE3",
+    "image": "images/watchSE.png",
+    "resume": "Des fonctionnalités de santé.",
+    "categorie": "watch",
+    "prix": 269
+  },
+  {
+    "id": 103,
+    "title": "Watch Ultra 3",
+    "image": "images/watchPro.png",
+    "resume": "La montre ultime pour le sport.",
+    "categorie": "watch",
+    "prix": 899
+  },
+  {
+    "id": 201,
+    "title": "iPad Pro",
+    "image": "images/ipad_pro.jpg",
+    "resume": "Performance Pro.",
+    "categorie": "ipad",
+    "prix": 1119
+  },
+  {
+    "id": 202,
+    "title": "iPad Air",
+    "image": "images/ipad_air.jpg",
+    "resume": "Légèreté et couleurs.",
+    "categorie": "ipad",
+    "prix": 669
+  },
+  {
+    "id": 203,
+    "title": "iPad",
+    "image": "images/ipad.jpg",
+    "resume": "Parfait au quotidien.",
+    "categorie": "ipad",
+    "prix": 389
+  },
+  {
+    "id": 204,
+    "title": "iPad mini",
+    "image": "images/ipad_mini.jpg",
+    "resume": "Compact et puissant.",
+    "categorie": "ipad",
+    "prix": 939
+  },
+  {
+    "id": 301,
+    "title": "MacBook Pro 16\"",
+    "image": "images/mbp_14_16.jpg",
+    "resume": "Puissance extrême.",
+    "categorie": "mac",
+    "prix": 1799
+  },
+  {
+    "id": 302,
+    "title": "MacBook Air M2",
+    "image": "images/mba_13_15.jpg",
+    "resume": "Fin et léger.",
+    "categorie": "mac",
+    "prix": 1099
+  },
+  {
+    "id": 303,
+    "title": "iMac 24\"",
+    "image": "images/imac.jpg",
+    "resume": "Design tout-en-un.",
+    "categorie": "computer",
+    "prix": 1499
+  },
+  {
+    "id": 304,
+    "title": "Mac Mini",
+    "image": "images/mac_mini.jpg",
+    "resume": "Compact et puissant.",
+    "categorie": "computer",
+    "prix": 699
+  },
+  {
+    "id": 30,
+    "title": "Mac Studio",
+    "image": "images/mac_studio.jpg",
+    "resume": "Toute la puissance et les ports\nqu'il faut pour les worklows pro.",
+    "categorie": "computer",
+    "prix": 2299
+  },
+  {
+    "id": 30,
+    "title": "Mac Pro",
+    "image": "images/mac_pro.jpg",
+    "resume": "Une station de travail pro avec\nextensions PCIe pour les workflows\n les plus exigeants",
+    "categorie": "computer",
+    "prix": 8299
+  }
+]
