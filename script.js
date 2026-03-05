@@ -41,18 +41,31 @@ function generateProduct(list = productsList) {
         article.appendChild(buttonReview)
 
 
-        buttonReview.addEventListener("click", () => {
-            const id = buttonReview.dataset.id
-            const product = productsList.find(p => p.id == id)
+        buttonReview.addEventListener("click", async () => {
 
+            const response = await fetch("http://localhost:8081/avis")
+            const review = await response.json()
+            const id = buttonReview.dataset.id
+            const apiReview = review.filter(a => a.pieceId == id)
             const reviewContainer = document.createElement('div')
-            for (let i = 0; i < product.avis.length; i++) {
+            apiReview.forEach(a => {
+
                 const review = document.createElement('p')
-                review.innerText = product.avis[i]
+                review.innerText = `${a.utilisateur} : ${a.commentaire}`
                 reviewContainer.appendChild(review)
-            }
+
+
+            })
             article.appendChild(reviewContainer)
         })
+
+
+
+
+
+
+
+
     }
 }
 
