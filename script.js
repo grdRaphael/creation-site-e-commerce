@@ -1,16 +1,20 @@
+
 const response = await fetch('produit.json');
 const productsList = await response.json();
+
+
 let currentList = productsList
 
 const factSheets = document.querySelector(".factSheets");
 generateProduct()
 
+
 function generateProduct(list = productsList) {
     factSheets.innerHTML = "";
     currentList = list
-    
+
     for (let i = 0; i < list.length; i++) {
-        
+
         let article = document.createElement('article')
         factSheets.appendChild(article)
 
@@ -30,8 +34,27 @@ function generateProduct(list = productsList) {
         priceProduct.innerHTML = `${list[i].prix} €`
         article.appendChild(priceProduct)
 
+        let buttonReview = document.createElement("button")
+        buttonReview.innerText = 'Afficher les avis'
+        buttonReview.classList = 'btn-sort'
+        buttonReview.dataset.id = list[i].id
+        article.appendChild(buttonReview)
+
+
+        buttonReview.addEventListener("click", () => {
+            const id = buttonReview.dataset.id
+            const product = productsList.find(p => p.id == id)
+
+            const reviewContainer = document.createElement('div')
+            for (let i = 0; i < product.avis.length; i++) {
+                const review = document.createElement('p')
+                review.innerText = product.avis[i]
+                reviewContainer.appendChild(review)
+            }
+            article.appendChild(reviewContainer)
+        })
     }
-};
+}
 
 
 let buttonAll = document.querySelector('.btnAll')
