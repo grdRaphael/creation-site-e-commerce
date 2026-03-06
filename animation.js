@@ -23,6 +23,24 @@ buttons.forEach(btn => {
 
 // Initialisation au chargement
 window.addEventListener("load", () => {
-  const active = document.querySelector(".is-active");
-  if (active) movePill(active);
-});
+
+  const savedFilter = localStorage.getItem("filtre")
+
+  if(savedFilter){
+
+    const btn = document.querySelector(`[data-category="${savedFilter}"]`)
+
+    if(btn){
+      document.querySelector(".is-active")?.classList.remove("is-active")
+      btn.classList.add("is-active")
+      movePill(btn)
+    }
+
+  } else {
+
+    const active = document.querySelector(".is-active")
+    if(active) movePill(active)
+
+  }
+
+})
